@@ -7,133 +7,154 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Digitalizá tu comercio y convertí el futuro en presente 🚀"
     />
     <title>Comercio Digital</title>
 
      <!-- ICONS Links -->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <script src="https://kit.fontawesome.com/5272bdfa5d.js" crossorigin="anonymous"></script>
      
      <!-- MATERIALIZECSS Links cdn-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
      <link rel="stylesheet" href="css/index.css">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
 
+     <!-- AOS - animate scroll -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo">
-          <img class=" size-logo" src="images/logo-rmbg.png" alt="Comercio Digital">
-        </a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="login.html">Iniciar Sesión</a></li>
-          <li><a href="register.html">Registrarse</a></li>
-        </ul>
-      </div>
-    </nav>
 
-    <div class="img-bg">
-      <img src="images/background-index.webp" class="img-bg-index" alt="Imagen de fondo Sitio Web">
-      <div class="header-wrapper c valign-wrapper">
-        <div class="d iv">
-          <br />
-          <h1>Comercio Digital</h1>
-          <span class="dx">Digitalizá tu comercio y convertí el futuro en presente 🚀</span>
-          <br />
-          <i class="medium material-icons">keyboard_arrow_down</i>
+    
+      <nav>
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <img class=" size-logo" src="images/logo-rmbg.png" alt="Comercio Digital">
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="login.html">Iniciar Sesión</a></li>
+            <li><a href="register.html">Registrarse</a></li>
+            <li><a href="products.html">Productos</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="img-bg">
+        <img src="images/background-index.webp" class="img-bg-index" alt="Imagen de fondo Sitio Web">
+        <div class="header-wrapper c valign-wrapper">
+          <div class="d iv">
+            <br />
+            <h1>Comercio Digital</h1>
+            <span class="dx">Digitalizá tu comercio y convertí el futuro en presente 🚀</span>
+            <br />
+            <i class="medium material-icons hero__scroll"  data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">keyboard_arrow_down</i>
+          </div>
         </div>
       </div>
-    </div>
-  
-    <div class="container top-50">
-      <div class="col s10 m10 l10">
-          <h2 class="section-title">Objetivos</h2>
-      </div>
-      <div class="row">
-          <div class="col s12 m4 l4">
-            <h4><i class="medium material-icons">trending_up</i></h4>
-            <p class="text-icon ">Potenciar tu comercio integrándolo rápidamente en el mercado de internet.</p>
-          </div>
-          <div class="col s12 m4 l4">
-            <h4><i class="medium material-icons">flash_on</i></h4>
-            <p class="text-icon "> Aumentar tu imaginación y convertirla en realidad.</p>
-          </div>
-          <div class="col s12 m4 l4">
-            <h4><i class="medium material-icons">whatshot</i></h4>
-            <p class="text-icon "> Proporcionarte herramientas de simple uso para digitalizar tu producto.</p>
-          </div>
-      </div>
-    </div>
-
-    <div class="container top-70">
-      <div class="row">
-          <div class="col s12 m4 l4">
-            <img src="images/scanner-qr-removebg-preview.png" alt="Comercio Digital QR">
-          </div>
-          <div class="col s12 m8 l8 h500 pos-r">
-            <h3 class="qr-text pos-center">Conectá tu comercio digital a través de el espacio físico del código qr y brindá al usuario
-              lo mejor de ambos mundos.</h3>
-          </div>
-      </div>
-    </div>
-
-    <div class="container top-70">
-      <div class="col s12">
-          <h2 class="section-title">Contactanos</h2>
-      </div>
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12 m6 l6">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">Nombre o Empresa</label>
-            </div>
-            <div class="input-field col s12 m6 l6">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-              <label for="icon_prefix2">Mensaje</label>
-            </div>
-          </div>
-          <div class="row">
-            <button class="btn waves-effect " type="submit" name="action">Enviar
-              <i class="material-icons right">send</i>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <footer class="page-footer top-50">
-      <div class="container">
+    
+      <div class="container top-50"  data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+        <div class="col s10 m10 l10">
+            <h2 class="section-title">Objetivos</h2>
+        </div>
         <div class="row">
-          <div class="col l6 s12">
-            <a href="index.html" class="brand-logo">
-              <img class=" size-logo" src="images/logo-rmbg.png" alt="Comercio Digital">
-            </a>
-            <h6 class="black-text"> Comercio Digital </h6>
-            <h7 class="black-text text-lighten-4">Digitalizá tu comercio y convertí el futuro en el presente 🚀</h7>
-          </div>
-          <div class="col l4 offset-l2 s12 ta-center">
-              <h6 class="black-text"> Seguinos en nuestras redes sociales.</h6>
-              <i class="fa-brands fa-instagram-square fa-2x"></i>
-              <i class="fa-solid fa-square-envelope fa-2x"></i>
-              <i class="fa-brands fa-facebook-square fa-2x"></i>
-          </div>
+            <div class="col s12 m4 l4">
+              <h4><i class="medium material-icons">trending_up</i></h4>
+              <p class="text-icon ">Potenciar tu comercio integrándolo rápidamente en el mercado de internet.</p>
+            </div>
+            <div class="col s12 m4 l4">
+              <h4><i class="medium material-icons">flash_on</i></h4>
+              <p class="text-icon "> Aumentar tu imaginación y convertirla en realidad.</p>
+            </div>
+            <div class="col s12 m4 l4">
+              <h4><i class="medium material-icons">whatshot</i></h4>
+              <p class="text-icon "> Proporcionarte herramientas de simple uso para digitalizar tu producto.</p>
+            </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container black-text text-center">
-        © 2022 Todos los derechos reservados. Los logotipos y lemas que identifican a cualquier producto y servicio de Comercio Digital son marcas de su propiedad.
+
+      <div class="container top-70"  data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+        <div class="row">
+            <div class="col s12 m12 l4">
+              <img class="img-scanner" src="images/scanner-qr-removebg-preview.png" alt="Comercio Digital QR">
+            </div>
+            <div class="col s12 m12 l8 h500 pos-r">
+              <h3 class="qr-text pos-center">Conectá tu comercio digital a través de el espacio físico del código qr y brindá al usuario
+                lo mejor de ambos mundos.</h3>
+            </div>
         </div>
       </div>
-    </footer>
+
+      <div class="container top-70"  data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+        <div class="col s12">
+            <h2 class="section-title">Contactanos</h2>
+        </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12 m6 l6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Nombre o Empresa</label>
+              </div>
+              <div class="input-field col s12 m6 l6">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                <label for="icon_prefix2">Mensaje</label>
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn waves-effect " type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer class="page-footer top-50">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <a href="index.html" class="brand-logo">
+                <img class=" size-logo" src="images/logo-rmbg.png" alt="Comercio Digital">
+              </a>
+              <h6 class="black-text"> Comercio Digital </h6>
+              <h7 class="black-text text-lighten-4">Digitalizá tu comercio y convertí el futuro en el presente 🚀</h7>
+            </div>
+            <div class="col l4 offset-l2 s12 ta-center">
+                <h6 class="black-text"> Seguinos en nuestras redes sociales.</h6>
+                <i class="fa-brands fa-instagram-square fa-2x"></i>
+                <i class="fa-solid fa-square-envelope fa-2x"></i>
+                <i class="fa-brands fa-facebook-square fa-2x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container black-text text-center">
+          © 2022 Todos los derechos reservados. Los logotipos y lemas que identifican a cualquier producto y servicio de Comercio Digital son marcas de su propiedad.
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+      <script src="https://kit.fontawesome.com/5272bdfa5d.js" crossorigin="anonymous"></script>
+
+      <script>
+        AOS.init();
+      </script>
+
+      <script>
+  
+        $('.hero__scroll').on('click', function(e) {
+          $('html, body').animate({
+            scrollTop: $(window).height() - 400
+          }, 800);
+        });
+      </script>
   </body>
 </html>

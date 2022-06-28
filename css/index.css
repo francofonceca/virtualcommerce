@@ -15,6 +15,7 @@ nav{
     box-shadow: none;
     background-color: transparent;
     transition: box-shadow .3s, background-color .3s;
+    top: 0px !important;
 }
 
 .img-bg{
@@ -120,6 +121,7 @@ i {
 }
 
 .page-footer {
+    width: 100%;
     background-color: #eee !important;
     bottom: 0px !important;
 }
@@ -165,4 +167,26 @@ i {
     transition: all 0.5s !important;
     color: #1de9c3 !important;
     border: 0.5px solid black !important;
+}
+
+.hero__scroll{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .img-scanner {
+        width: 350px !important; 
+        height: 350px !important;
+    }
+    .pos-center{
+        left:  0px !important;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    
+    .pos-center{
+        left:  40px !important;
+    }
 }

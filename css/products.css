@@ -1,0 +1,216 @@
+
+body {
+    background-color: #fffdfd;
+}
+
+.size-logo{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+nav{
+    z-index: 10;
+    position: fixed;
+    box-shadow: none;
+    background-color: transparent;
+    transition: box-shadow .3s, background-color .3s;
+    top: 0px !important;
+}
+
+i {
+    color:#1de9c3 !important;
+    background-color: transparent !important;
+}
+
+.top-20 {
+    margin-top: 100px;
+}
+
+.top-50 {
+    margin-top: 200px;
+}
+
+.top-70 {
+    margin-top: 300px !important;
+}
+.page-footer {
+    width: 100%;
+    background-color: #eee !important;
+    bottom: 0px !important;
+}
+
+.ta-center, .text-center{
+    text-align: center !important;
+}
+
+.ta-center i {
+    margin-top: 20px !important;
+    margin: 10px;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.p-1 {
+    padding:  0.4rem;
+}
+
+.p-2 {
+    padding:  2rem;
+}
+.card {
+    background-color: #1de9c3 !important;
+}
+.ta-center, .text-center{
+    text-align: center !important;
+}
+
+.card-product {
+    padding: 10px 0px 10px 0px !important;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.card-product:hover {
+    -moz-box-shadow: 0 3px 14px rgba(0,0,0,.17)!important;
+    -webkit-box-shadow: 0 3px 14px rgba(0,0,0,.17)!important;
+    box-shadow: 0 3px 14px rgba(0,0,0,.17)!important;
+    border:  0px solid #000 ;
+}
+
+.img-size-products {
+    width: 275px;
+    height: 275px;
+    display: block;
+    margin: 0px auto;
+}
+
+.title-products {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0px !important;
+    margin-top: 10px !important;
+}
+
+.price-products{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0px !important;
+    margin-top: 10px !important;
+}
+
+.header-shop {
+    height: 200px;
+    width: 100%;
+    position:absolute; /*El div será ubicado con relación a la pantalla*/
+    background: linear-gradient(rgba(39,50,57,0),#273239 60%);
+}
+
+.header-container {
+    height: 200px;
+    width: 100%;
+    position: relative;
+
+}
+
+.header-section {
+    color: #eee !important;
+    position: absolute;
+    bottom: 0px;
+    padding: 0 4% 16px;
+}
+
+.header-section h1 {
+    margin-bottom: 1px !important;
+}
+
+.header-section p {
+    margin: 1px !important;
+}
+
+.header-search {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    -moz-box-shadow: 0 3px 14px rgba(0,0,0,.17)!important;
+    -webkit-box-shadow: 0 3px 14px rgba(0,0,0,.17)!important;
+    box-shadow: 0 3px 14px rgba(0,0,0,.17)!important;
+}
+
+.card-search {
+    margin: 30px 0px 0px 30px;
+    position: relative;
+    background-color: #eee !important;
+    border-radius: 35px;
+}
+
+.card-search i {
+    position: absolute;
+    margin: 15px;
+    font-size: 18px;
+    color: #000 !important;
+}
+
+.card-search i:hover {
+    cursor: pointer;
+    color: #1de9c3 !important;
+}
+
+.card-search input {
+    margin-left: 50px !important;
+    width: 80% !important;
+    height: 2.5rem !important;
+}
+
+.container-opinions {
+    margin-top: 30px;
+    width: 150px;
+    background-color: #eee !important;
+    border-radius: 35px;
+}
+
+.card-opinions:hover, .card-opinions:hover i {
+    color: #1de9c3 !important;
+    cursor: pointer;
+}
+
+
+
+/* **************************************+*
+---------- MEDIAQUERIES ZONEEEE ----------- 
+*************************************** */
+
+
+@media only screen and (max-width: 600px) {
+    
+    .img-size-products {
+        height: 180px !important;
+        width: 180px !important;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    
+    .img-size-products {
+        height: 180px !important;
+        width: 180px !important;
+    }
+    
+}
