@@ -1,12 +1,11 @@
 
 body {
-    background-color: #fffdfd;
+    background-color: #f4f4f4;
 }
 
 .size-logo{
-    width: 50px;
-    height: 50px;
-    margin: 5px;
+    width: 27px;
+    height: 27px;
 }
 
 nav{
@@ -39,7 +38,7 @@ i {
     margin-top: 300px !important;
 }
 .page-footer {
-    width: 100%;
+    width: 100% !important;
     background-color: #eee !important;
     bottom: 0px !important;
 }
@@ -236,52 +235,122 @@ i {
     margin-left: 10px;
 }
 
+.sidenav, .collapsible-body{
+    box-shadow: none;
+    background-color: #1de9c3 !important;
+}
+
+.admin-text {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #000;
+}
+
+.icon-sidenav {
+    color: #000 !important;
+}
+
+.ul-account-sidenav {
+    margin-left: 25px;
+}
+
+.collapsible-account {
+    position: absolute;
+    top: 70% !important;
+    width: 100% !important;
+}
+
+.li-sidenav {
+    padding: 15px 0px 15px 0px !important;
+}
+
+.li-sidenav:hover {
+    background-color: rgba(0,0,0,0.05) !important;
+    border-bottom: 1px solid #000;
+}
+
+.li-sidenav>a:hover, .li-sidenav .collapsible-header {
+    background-color: transparent !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-80 {
+    width: 80%;
+}
+
+footer {
+
+}
 /* **************************************+*
 ---------- MEDIAQUERIES ZONEEEE ----------- 
 *************************************** */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     
-    .img-size-products {
-        height: 180px !important;
-        width: 180px !important;
+    .col-20 {
+        width: 5%;
     }
 
-    .img-size-products-modal{
-        height: 200px !important;
-        width: 200px !important;
+    .col-80 {
+        width: 100%;
     }
 
-    .brand-logo{
-        display: none !important;
-    }
+}
 
-    .m-2 {
-        margin-left: none;
-    }
+@media only screen and (min-width: 768px) {
+
     
+    .col-20 {
+        width: 5%;
+    }
+
+    .col-80 {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .col-20 {
+        width: 30%;
+    }
+
+    .col-80 {
+        width: 70%;
+    }
 }
 
 
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1300px) {
     
-    .img-size-products {
-        height: 180px !important;
-        width: 180px !important;
+    .col-20 {
+        width: 25%;
     }
 
-    .img-size-products-modal{
-        height: 200px !important;
-        width: 200px !important;
-    }
-
-    .brand-logo{
-        display: none !important;
-    }
-    .c-top-50 {
-        margin-top: 300px;
+    .col-80 {
+        width: 75%;
     }
     
+}
+
+@media only screen and (min-width: 1500px ) {
+
+    .col-20 {
+        width: 25%;
+    }
+
+    .col-80 {
+        width: 75%;
+    }
 }

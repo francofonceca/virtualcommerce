@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/logo-rmbg.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Digitalizá tu comercio y convertí el futuro en presente 🚀"
+    />
+    <title>Comercio Digital | Administracion</title>
+
+     <!-- ICONS Links -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/5272bdfa5d.js" crossorigin="anonymous"></script>
+     
+     <!-- MATERIALIZECSS Links cdn-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="css/administration.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
+
+  </head>
+<body>
+
+
+
+    <div class="d-flex">
+        <div class="col-20">
+            <a href="#" data-target="slide-fixed" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="slide-fixed" class="sidenav sidenav-fixed">
+                <li class="admin-text"> Administracion </li>
+                <ul class="collapsible ">
+                    <li class="li-sidenav">
+                      <a class="collapsible-header"><i class="fa-solid fa-bag-shopping icon-sidenav"></i> Productos </a>
+                    </li>
+                    <li class="li-sidenav">
+                      <a class="collapsible-header"><i class="fa-solid fa-arrow-trend-up icon-sidenav"></i> Estadisticas </a>
+                    </li>
+                    <li class="li-sidenav">
+                      <a class="collapsible-header"><i class="fa-solid fa-qrcode icon-sidenav"></i> Tu QR </a>
+                    </li>
+                    <li class="li-sidenav collapsible-account">
+                      <div class="collapsible-header"><i class="fa-solid fa-user icon-sidenav"></i> Cuenta</div>
+                      <div class="collapsible-body">
+                        <ul class="ul-account-sidenav">
+                            <li> <i class="fa-solid fa-gear icon-sidenav"></i> Configuracion </li>
+                            <li> <i class="fa-solid fa-right-from-bracket icon-sidenav"></i> Salir </li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <div class="col-80">
+            <h5><a href="index.html" alt="volver"><i class="fa-solid fa-arrow-left-long icon-sidenav"></i></a></h5>
+            
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
+    <script>
+
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+        });
+        
+
+    </script>
+</body>
+</html>

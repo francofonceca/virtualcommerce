@@ -29,16 +29,28 @@
     <div>
         <nav>
             <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">
-                <img class=" size-logo" src="images/logo-rmbg.png" alt="Comercio Digital">
-            </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a class="black-text" href="login.html">Iniciar Sesión</a></li>
-                <li><a class="black-text" href="register.html">Registrarse</a></li>
-            </ul>
+                <a href="index.html" class="brand-logo">
+                    <img class=" size-logo" src="images/logo-rmbg.png" alt="Comercio Digital">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="black-text" href="login.html">Iniciar Sesión</a></li>
+                    <li><a class="black-text" href="register.html">Registrarse</a></li>
+                    <li><a class="black-text" href="register.html"><i class="fa-solid fa-user"></i>Franco</a></li>
+                </ul>
             </div>
         </nav>
     </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="index.html">
+            <img class=" size-logo" src="images/logo-rmbg.png" alt="Comercio Digital">
+        </a>
+      </li>
+      <li><a class="black-text" href="login.html">Iniciar Sesión</a></li>
+      <li><a class="black-text" href="register.html">Registrarse</a></li>
+      <li><a class="black-text" href="register.html"><i class="fa-solid fa-user"></i>Franco</a></li>
+    </ul>
 
     <!-- NAVBAR SECTION -->
 
@@ -60,13 +72,18 @@
 
     <div class="header-search">
         <div class="row">
-          <div class="col s12 m2 l2">
+          <div class="col s12 m5 l3">
             <div class="card-search">
                 <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <input placeholder="Buscar productos..." id="search" type="text" class="validate">
             </div>
           </div>
-          <div class="col s12 m1 l1 text-center  container-opinions">
+          <div class="col s12 m2 l1 offset-l6 offset-m2 text-center container-opinions">
+              <div class="card-opinions"> 
+                <p><i class="fa-solid fa-filter black-text"></i> Filtros</p>  
+              </div>
+          </div>
+          <div class="col s12 m2 l1 text-center container-opinions m-2">
               <div class="card-opinions"> 
                 <p>15 opiniones <i class="fa-solid fa-angle-right black-text"></i></p>  
               </div>
@@ -75,14 +92,14 @@
     </div>
 
     <!-- PRODUCTS LIST -->
-    <div class="container top-50">
+    <div class="container c-top-50">
         <div class="row">
           <div class="col s12 m4 l4 card-product">
             <img class=" img-size-products" src="images/background-index.webp" alt="Comercio Digital">
             <h2 class="title-products">familia ipa</h2>
             <h5 class="price-products">$ 1.500</h5>
           </div>
-          <div class="col s12 m4 l4 card-product">
+          <div class="col s12 m4 l4 card-product modal-trigger" data-target="modal1">
             <img class=" img-size-products" src="images/logo.png" alt="Comercio Digital">
             <h2 class="title-products">familia ipa</h2>
             <h5 class="price-products">$ 1.500</h5>
@@ -161,5 +178,40 @@
 
     <!-- FOOTER SECTION -->
 
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+          <div class="modal-content row">
+              <div class="col l6 m6 s12">
+                <img class="img-size-products-modal" src="images/scanner-qr.jpg" alt="Comercio Digital">
+              </div>
+              <div class="col l6 m6 s12">
+                <h2 class="info-title-products text-left">familia ipa</h2>
+                <span>
+                  <i class="fa-solid fa-star"></i> 
+                  <span> 4.5 </span>
+                </span>
+                <h5 class="price-products text-left">$ 1.500</h5>
+                <p class="info-subtitle-products">A cerca del producto</p>
+                <h2 class="info-description-products text-left">
+                  Producto a base de especias completamente naturales con diferentes escencias y azucar.
+                </h2>
+              </div>
+          </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
+    <script>
+        $(document).ready(function(){
+          $('.modal').modal();
+        });
+
+
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+
+    </script>
 </body>
 </html>

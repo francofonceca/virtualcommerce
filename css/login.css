@@ -123,3 +123,19 @@ input {
 label {
     color: #000 !important;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .brand-logo{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    
+    .brand-logo{
+        display: none !important;
+    }
+}
